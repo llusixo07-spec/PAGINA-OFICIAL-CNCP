@@ -915,3 +915,47 @@ img {
     padding: 15px;
   }
 }
+
+/* Adaptación de Historia para celulares */
+@media screen and (max-width: 768px) {
+
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  main,
+  section,
+  article,
+  .historia,
+  #historia,
+  .container,
+  .contenedor {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .historia,
+  #historia {
+    padding: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .historia img,
+  #historia img,
+  section img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  p,
+  h1,
+  h2,
+  h3 {
+    overflow-wrap: break-word;
+  }
+}
