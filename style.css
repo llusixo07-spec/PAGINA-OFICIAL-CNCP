@@ -959,3 +959,24 @@ img {
     overflow-wrap: break-word;
   }
 }
+
+/* Corregir Historia en celulares */
+@media screen and (max-width: 768px) {
+  #historia .historia-contenido {
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    padding: 20px 16px;
+    margin: 25px auto 0;
+    box-sizing: border-box;
+  }
+
+  #historia .historia-contenido p,
+  #historia .historia-contenido h3 {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+}
